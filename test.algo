@@ -1,0 +1,23 @@
+ALGORITHM  procedural programming
+VAR
+    v1:ARRAY_OF INTEGER[3];
+    v2:ARRAY_OF INTEGER[3];
+    i,j:INTEGER;
+    ps:INTEGER;
+BEGIN
+    p:=0;
+    FOR i FROM 0 TO 3  DO
+        FOR j FROM 0 TO 3 DO
+        IF (i=j) THEN
+            ps:=ps+v1[i]*v2[j];
+        END_IF
+        END_FOR
+    END_FOR
+    
+  IF (ps=0) THEN
+        write ("The two vector are orthogonals and their dot product is nul");
+   ELSE
+       write("The two vectors are not orthogonals and their dot product is :"+ps);
+   END_IF
+END
+END
